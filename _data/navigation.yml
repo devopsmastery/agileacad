@@ -1,0 +1,54 @@
+#Please use the main menu items under the "text"
+
+- text: Home
+  url: /
+  # submenu:
+  # - text: Home 2
+  #   url: /pages/index-2
+  #- text: Home 3
+    #url: /pages/index-3
+- text: Trainings
+  url: /Trainings/trainings
+  submenu:
+  - text: Scrum
+    url: /Trainings/scrum
+  - text: Scaled Agile (SAFe)
+    url: /Trainings/ScaledAgile
+  - text: Disciplined Agile
+    url: /Trainings/PMI-DA
+  - text: AWS Cloud
+    url: /Trainings/AWS
+  - text: DevOps
+    url: /Trainings/devops
+  - text: Jira
+    url: /Trainings/Jira
+- text: Services
+  url: /services/services
+  submenu:
+  - text: Agile Assessments
+    url: /services/agile-assessments
+  - text: Agile Transformation
+    url: /services/agile-transformation
+  - text: DevOps Strategy
+    url: /services/devops-strategy
+- text: Blogs
+  url: /pages/blog
+- text: About
+  url: /pages/about
+- text: Contact
+  url: /pages/contact
+- text: Pages
+  url: /pages/services
+  submenu:
+  - text: Services
+    url: /pages/services
+  - text: Service Details
+    url: /pages/services-details
+  - text: Portfolio
+    url: /pages/portfolio
+  - text: Portfolio Details
+    url: /pages/portfolio-details
+  - text: Home 2
+    url: /pages/index-2
+  - text: Home 3
+    url: /pages/index-3
