@@ -10,18 +10,18 @@
 - text: Trainings
   url: /Trainings/trainings
   submenu:
-  - text: Scrum
-    url: /Trainings/scrum
+  - text: Agile-Scrum
+    url: /Trainings/agile-trainings
   - text: Scaled Agile (SAFe)
     url: /Trainings/ScaledAgile
   - text: Disciplined Agile
-    url: /Trainings/PMI-DA
+    url: /Trainings/pmi-disciplined-agile
   - text: AWS Cloud
-    url: /Trainings/AWS
+    url: /Trainings/aws-cloud
   - text: DevOps
     url: /Trainings/devops
   - text: Jira
-    url: /Trainings/Jira
+    url: /Trainings/jira
 - text: Services
   url: /services/services
   submenu:

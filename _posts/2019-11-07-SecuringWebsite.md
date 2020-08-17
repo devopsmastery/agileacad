@@ -79,11 +79,11 @@ The final step is to configure the DNS record for the redirecting host name whic
 
 We will be using AWS Route53 as our DNS, so go to Route53 from AWS Console
 
-You should be having a public hosted zone already configured for our website. If not, please refer to my previous blow on [how to build a website in under 2 hours](./BuildStaticWebsite){:target="blank"} for configuration steps.
+You should be having a public hosted zone already configured for our website. If not, please refer to my previous blog on [how to build a website in under 2 hours](./BuildStaticWebsite){:target="blank"} for configuration steps.
 
 In my previous article, we had created 2 A record sets pointing to our S3 buckets. As CloudFront is going to serve our content, we no longer need this A record.
 
-What we need is 2 A Records (naked and www) to point to our new distribution E.g *d2g3ds8F4phvte.cloudfront.net*
+What we need is two new A Records (naked and www) to point to our new distribution E.g <br> *d2g3ds8F4phvte.cloudfront.net*
 
 You need to set Alias to Yes and dropdown should show the distribution or you can just paste the distribution (just like I did).
 
@@ -100,13 +100,13 @@ We need to note that files in the CloudFront CDN are not meant to change and so 
 
 So we have to invalidate the content on the CDN for which we use CloudFront's invalidations feature and a easy way to do this is using the `s3_website` utility.
 
-We discussed s3_website in my previous [blog](./posts/2019-11-06-BuildStaticWebsite.markdown){:target="blank"} on **S3_website utility** so i wont go over it again.
+We discussed s3_website in my previous [blog](./BuildStaticWebsite){:target="blank"} on **S3_website utility** so i wont go over it again.
 
 But I will show you the changes required to our *s3_website.yml* file for our Cloudfront invalidations to take place whenever we push or upload the new content.
 
 Do the following changes to **s3_website.yml**
 
-`cloudfront_distribution_id: YOUR_DISTRIBUTION_ID`
+`cloudfront_distribution_id: YOUR_DISTRIBUTION_ID` <br>
 `cloudfront_wildcard_invalidation: true` <br>
 `cloudfront_invalidate_root: true`
 
